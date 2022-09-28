@@ -17,3 +17,6 @@ cancel.addEventListener("click",()=>{
     modal.style.top="-1750px";
     lista.selectedIndex=""
 })
+accept.addEventListener("click", ()=>{
+    location="./fin.html"
+})
