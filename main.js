@@ -7,6 +7,9 @@ boton.addEventListener("click", e=>{
 
     if(username==="carlitos" && password==="carlitos123"){
         alert("Bienvenido")
+        setTimeout(()=>{
+            location="./page1.html"
+        },1000)
     }else{
         document.querySelector("#mensaje").style.display="block"
     }

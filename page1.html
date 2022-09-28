@@ -10,24 +10,33 @@
     <title>Document</title>
 </head>
 
-<body>
-    <nav>
-        <ul>
-            <li><i class="bi bi-house-door"></i></li>
+<body class="bg-gradient-to-b from-blue-200 to-pink-200 columns-1">
+    <nav class="flex flex-row px-5 py-2 justify-between bg-blue-200 text-xl border-2 border-b-rose-100">
+        <ul class="flex flex-row gap-x-10">
             <li>
-                <p>NOSOTROS</p>
+                <a href=""><i class="bi bi-house-door"></i></a>
             </li>
             <li>
-                <p>PRODUCTOS</p>
+                <a href="">
+                    <p class="">NOSOTROS</p>
+                </a>
+
+            </li>
+            <li>
+                <a href="">
+                    <p>PRODUCTOS</p>
+                </a>
+
             </li>
         </ul>
-        <p>Usuario: Carlitos</p>
+        <p class="place-self-end">Usuario: Carlitos</p>
     </nav>
     <main>
         <div class="Nosotros">
-            <h2>Nosotros</h2>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corrupti recusandae aliquid magnam vitae
+            <h2 class="text-4xl text-center font-serif font-bold">Nosotros</h2>
+            <img src="./caja_nosotros.jpg" alt="" class="float-left rounded-lg max-w-xl mx-8">
+            <p class="text-lg mx-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corrupti recusandae aliquid
+                magnam vitae
                 excepturi blanditiis, vero soluta dolorum sed natus illum culpa assumenda, enim repudiandae eveniet. Non
                 praesentium dicta accusamus optio sit aperiam atque? Esse quos voluptas tempora dignissimos temporibus
                 at, voluptatem aliquam ex itaque maiores iure veniam, accusantium repellat quas vero ut nulla quasi
@@ -36,29 +45,50 @@
                 Recusandae labore ratione nam et sint totam laborum, corporis quae error voluptas perferendis sequi
                 ullam iure odio mollitia obcaecati, molestiae, harum deleniti velit tempora quidem ea quod facilis.
                 Repellendus eveniet ab a totam ea omnis excepturi, atque repudiandae ratione amet soluta error culpa,
-                nobis veniam doloremque libero quas, sapiente beatae autem id dolor eos iste. Fugit enim eos molestias
-                at ullam odio distinctio vel minima aliquam explicabo obcaecati minus, iusto, beatae, tenetur eveniet
-                vitae. Explicabo minima dolore impedit quae tempora earum architecto, quam ipsum nostrum, ratione nisi
-                debitis. Vel autem cum, accusamus perspiciatis dolorem laudantium obcaecati! Vel architecto, non fuga,
-                tempore repellendus unde optio eum vitae, deleniti fugiat minima earum. Pariatur odio aut eum
-                laudantium. Voluptatum, facilis eius.</p>
+                nobis veniam doloremque libero quas, sapiente beatae autem id dolor eos iste.</p>
         </div>
-        <div class="productos">
-            <h2>Productos</h2>
-            <div class="pedido">
-                <label for="seleccionar">seleccionar</label>
+        <div class="clear-left productos">
+            <h2 class="text-4xl text-center font-serif font-bold">Productos</h2>
+            <div class="pedido my-4 mx-20 text-center">
+                <label for="lista">seleccionar</label>
                 <select name="" id="lista">
-                    <option value="">producto 1</option>
-                    <option value="">producto 2</option>
-                    <option value="">producto 3</option>
-                    <option value="">producto 4</option>
+                    <option value="" class="focus:bg-blue-100"></option>
+                    <option value="1" class="focus:bg-blue-300 target:bg-blue-300">producto 1</option>
+                    <option value="2" class="focus:bg-blue-100">producto 2</option>
+                    <option value="3" class="focus:bg-blue-100">producto 3</option>
+                    <option value="4" class="focus:bg-blue-100">producto 4</option>
                 </select>
-                <button>PEDIR</button>
+                <button class="mx-8 bg-pink-200 rounded-full" id="pedir">PEDIR</button>
             </div>
+            <div class="container px-8 mx-auto columns-2 gap-8 text-center">
+                <div class="my-4"><p class="text-md font-bold">producto1</p> <img src="./caja1.jpeg" alt="" class="w-full max-w-md aspect-square rounded-full mx-auto"></div>
+                <div class="my-4"><p class="text-md font-bold">producto2</p> <img src="./caja2.jpg" alt="" class="w-full max-w-md aspect-square rounded-full mx-auto"></div>
+                <div class="my-4"><p class="text-md font-bold">producto3</p> <img src="./caja3.jpg" alt="" class="w-full max-w-md aspect-square rounded-full mx-auto"></div>
+                <div class="my-4"><p class="text-md font-bold">producto4</p> <img src="./caja4.jpg" alt="" class="w-full max-w-md aspect-square rounded-full mx-auto"></div>
+                
+
+                
+            </div>
+
 
         </div>
     </main>
 
+    <footer class="mt-10 border border-t-blue-200"> 
+        <p class="text-center my-4">Coded by: &copy;Mateo Orozco Ardila</p>
+    </footer>
+    <div class="modal bg-black/25 w-full h-[1750px] absolute -top-[1750px] flex justify-center items-center backdrop-blur-sm">
+        <div class="modal_info flex flex-col items-center bg-gray-300">
+            <h3>INFORMACION DEL PEDIDO</h3>
+            <p>Producto seleccionado:</p>
+            <p id="seleccion"></p>
+            <div class="grupo_botones">
+                <button class="bg-red-600" id="cancel">Cancelar</button>
+                <button class="bg-green-600" id="accept">Aceptar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./page1.js"></script>
 </body>
 
 </html>
