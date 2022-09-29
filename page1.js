@@ -4,7 +4,7 @@ const modal = document.querySelector(".modal")
 const seleccion = document.getElementById("seleccion")
 const cancel = document.getElementById("cancel")
 const accept = document.getElementById("accept")
-const volver = document.getElementById("volver")
+const logout = document.getElementById("logout")
 pedir.addEventListener("click",()=>{
     if (lista.options[lista.selectedIndex].value==="") {
         alert("no selecciono un producto")
