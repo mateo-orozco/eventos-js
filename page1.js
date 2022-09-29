@@ -19,8 +19,5 @@ cancel.addEventListener("click",()=>{
     lista.selectedIndex=""
 })
 accept.addEventListener("click", ()=>{
-    location="./fin.html"
-})
-volver.addEventListener("click",()=>{
-    location="./page1.html"
+    location="./final.html"
 })
