@@ -50,7 +50,7 @@
         <div class="clear-left productos">
             <h2 class="text-4xl text-center font-serif font-bold">Productos</h2>
             <div class="pedido my-4 mx-20 text-center">
-                <label for="lista">seleccionar</label>
+                <label for="lista" class="mr-2">seleccionar</label>
                 <select name="" id="lista">
                     <option value="" class="focus:bg-blue-100"></option>
                     <option value="1" class="focus:bg-blue-300 target:bg-blue-300">producto 1</option>
@@ -58,7 +58,7 @@
                     <option value="3" class="focus:bg-blue-100">producto 3</option>
                     <option value="4" class="focus:bg-blue-100">producto 4</option>
                 </select>
-                <button class="mx-8 bg-pink-200 rounded-full" id="pedir">PEDIR</button>
+                <button class="mx-8 bg-pink-200 rounded-full p-1" id="pedir">PEDIR</button>
             </div>
             <div class="container px-8 mx-auto columns-2 gap-8 text-center">
                 <div class="my-4"><p class="text-md font-bold">producto1</p> <img src="./caja1.jpeg" alt="" class="w-full max-w-md aspect-square rounded-full mx-auto"></div>
@@ -77,8 +77,8 @@
     <footer class="mt-10 border border-t-blue-200"> 
         <p class="text-center my-4">Coded by: &copy;Mateo Orozco Ardila</p>
     </footer>
-    <div class="modal bg-black/25 w-full h-[1750px] absolute -top-[1750px] flex justify-center items-center backdrop-blur-sm">
-        <div class="modal_info h-1/6 w-1/6 flex flex-col items-center justify-center bg-gray-300 gap-8 rounded-2xl">
+    <div class="modal bg-black/25 w-full  fixed -top-[1750px] flex justify-center items-center backdrop-blur-sm h-screen">
+        <div class="modal_info h-1/4 w-1/4 flex flex-col items-center justify-center bg-gray-300 gap-8 rounded-2xl">
             <h3 class="font-bold">INFORMACION DEL PEDIDO</h3>
             <p>Producto seleccionado:</p>
             <p id="seleccion"></p>

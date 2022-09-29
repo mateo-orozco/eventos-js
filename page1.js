@@ -4,6 +4,7 @@ const modal = document.querySelector(".modal")
 const seleccion = document.getElementById("seleccion")
 const cancel = document.getElementById("cancel")
 const accept = document.getElementById("accept")
+const volver = document.getElementById("volver")
 pedir.addEventListener("click",()=>{
     if (lista.options[lista.selectedIndex].value==="") {
         alert("no selecciono un producto")
@@ -14,9 +15,12 @@ pedir.addEventListener("click",()=>{
     
 })
 cancel.addEventListener("click",()=>{
-    modal.style.top="-1750px";
+    modal.style.top="inherit";
     lista.selectedIndex=""
 })
 accept.addEventListener("click", ()=>{
     location="./fin.html"
+})
+volver.addEventListener("click",()=>{
+    location="./page1.html"
 })
